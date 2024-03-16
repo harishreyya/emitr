@@ -1,0 +1,95 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.last-drawn-card {
+  margin-top: 20px;
+}
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.deck {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 120px;
+  height: 160px;
+  background-color: #d6d3d3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: rgb(10, 10, 10);
+}
+
+.win-message {
+  font-size: 24px;
+  color: green;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Adding glowing effect */
+  margin-top: 20px;
+}
+
+.glow {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(56, 150, 56), 0 0 10px #0ff, 0 0 15px #0f0, 0 0 20px #ff0, 0 0 25px rgb(45, 31, 31), 0 0 30px #0ff, 0 0 35px rgb(209, 209, 218);
+  }
+  to {
+    text-shadow: 0 0 10px rgb(168, 168, 172), 0 0 20px #0ff, 0 0 30px #0f0, 0 0 40px #ff0, 0 0 50px rgb(37, 20, 20), 0 0 60px #0ff, 0 0 70px rgb(218, 218, 231);
+  }
+}
+
+.card-parent{
+  display: flex;
+  justify-content: center;
+}
+
+.drawn-card{
+  background: linear-gradient(45deg, #ff4d4d, #ffafaf);
+  color: rgb(46, 70, 46)
+}
